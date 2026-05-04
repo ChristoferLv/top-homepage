@@ -1,3 +1,133 @@
-body{
-    background-color: aquamarine;
+@font-face {
+  font-family: PlayFair;
+  src: url(fonts/PlayfairDisplay-Regular.woff2);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.woff2);
+}
+
+p {
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+body {
+    --main-bg-color: #0891b2;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Roboto;
+}
+
+.about-sec {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: center;
+}
+
+.about-pic {
+    flex-grow: 2;
+    transform: scale(2);
+}
+
+.about-text {
+    padding-left: 5%;
+    flex-grow: 3;
+    background-color: white;
+}
+
+.my-work-sec {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.my-work-sec p {}
+
+.works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 0;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 25vw;
+    min-height: 30vh;
+}
+
+.work-card>.img {
+    flex-basis: 0;
+    flex-grow: 5;
+    width: 100%;
+}
+
+.work-content {
+    flex-basis: 0;
+    flex-grow: 3;
+    background-color: #0891b2;
+}
+
+.work-content>.work-head {}
+
+.contact-sec {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+
+.contact-sec p {
+    color: white;
+    margin-top: 30px;
+    font-size: large;
+}
+
+.contact-sec .contact-me{
+    font-family: PlayFair;
+    font-size: 40px;
+}
+
+.contact-pic{
+    width: 50%;
+    height: 25vw;
+}
+
+.contact-pic>.img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.img {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    content: "Img";
 }
