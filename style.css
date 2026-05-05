@@ -1,11 +1,11 @@
 @font-face {
-  font-family: PlayFair;
-  src: url(fonts/PlayfairDisplay-Regular.woff2);
+    font-family: PlayFair;
+    src: url(fonts/PlayfairDisplay-Regular.woff2);
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url(fonts/Roboto-Regular.woff2);
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.woff2);
 }
 
 p {
@@ -31,7 +31,7 @@ body {
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: row;
-    padding: 5%;
+    padding: 5% 10%;
     justify-content: center;
 }
 
@@ -61,14 +61,15 @@ body {
     flex-wrap: wrap;
     gap: 50px 0;
     justify-content: space-between;
-    padding: 5%;
+    padding: 5% 10%;
 }
 
 .work-card {
     display: flex;
     flex-direction: column;
-    min-width: 25vw;
-    min-height: 30vh;
+    max-width: 25vw;
+    min-height: 40vh;
+    box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.25);
 }
 
 .work-card>.img {
@@ -80,16 +81,45 @@ body {
 .work-content {
     flex-basis: 0;
     flex-grow: 3;
-    background-color: #0891b2;
+    background-color: white;
+    padding: 15px 5%;
+
+    display: flex;
+    flex-direction: column;
+    color: #575655;
 }
 
-.work-content>.work-head {}
+.content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.content-top>p {
+    color: black;
+    font-family: PlayFair;
+    font-size: x-large;
+    margin-right: auto;
+}
+
+.content-top .icon {
+    margin-left: 15px;
+}
+
+.content-top .icon:nth-of-type(1){
+    background-image: url(icons/github-original.svg);
+}
+
+.content-top .icon:nth-of-type(2){
+    background-image: url(icons/open-in-new.svg);
+}
 
 .contact-sec {
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: row;
-    padding: 5%;
+    padding: 5% 10%;
     justify-content: space-between;
 }
 
@@ -100,12 +130,12 @@ body {
     font-size: large;
 }
 
-.contact-sec .contact-me{
+.contact-sec .contact-me {
     font-family: PlayFair;
     font-size: 40px;
 }
 
-.contact-pic{
+.contact-pic {
     width: 50%;
     height: 25vw;
 }
@@ -122,7 +152,10 @@ body {
 
 
 
-
+.icon {
+    width: 1.3rem;
+    height: 1.3rem;
+}
 
 
 .img {
