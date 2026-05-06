@@ -40,6 +40,11 @@ body {
     transform: scale(2);
 }
 
+.about-pic img{
+    width: 100px;
+    height: 100px;
+}
+
 .about-text {
     padding-left: 5%;
     flex-grow: 3;
@@ -68,14 +73,18 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 25vw;
-    min-height: 40vh;
+    height: 55vh;
     box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.25);
 }
 
-.work-card>.img {
-    flex-basis: 0;
-    flex-grow: 5;
+.work-card .work-pic {
+    height: 60%;
+}
+
+.work-card img{
     width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 .work-content {
@@ -140,7 +149,7 @@ body {
     height: 25vw;
 }
 
-.contact-pic>.img {
+.contact-pic>img {
     width: 100%;
     height: 100%;
 }
