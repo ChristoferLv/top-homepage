@@ -28,6 +28,26 @@ body {
     font-family: Roboto;
 }
 
+/* 
+O fundo "skewed" também pdoe ser feito dando skew num background e depous "de-skewing" o conteudo
+Obs, seria necessario adicionar um div (.about-background) em torno do conteudo (.about-sec) no HTML
+
+.about-background {
+    background-color: var(--main-bg-color);
+    padding: 5% 10%;
+    transform-origin: top;
+    transform: skew(0, -5deg);
+    transform-origin: top left;
+}
+
+.about-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform-origin: top left;
+    transform: skew(0, 5deg);
+} */
+
 
 .about-sec {
     position: relative;
