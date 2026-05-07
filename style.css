@@ -214,10 +214,12 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 .contact-sec {
     background-color: var(--main-bg-color);
     display: flex;
-    flex-direction: row;
     padding: 5% 10%;
-    justify-content: space-between;
     height: 60%;
+}
+
+.contact-info {
+    padding-right: 10px;
 }
 
 .contact-sec p {
@@ -232,7 +234,7 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 }
 
 .contact-pic {
-    width: 50%;
+    width: 70%;
     height: 100%;
 }
 
@@ -240,6 +242,8 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
     width: 100%;
     height: 100%;
     object-fit: fill;
+    /* vertical-align: bottom; */ /*Essa linha ou o display:block resolver o espaço de baixo da imagem*/
+    display: block;
 }
 
 .phone {
@@ -304,6 +308,19 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 }
 
 
+
+
+@media (max-width: 1000px) {
+    .contact-pic>img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .contact-sec {
+        padding: 5% 3%;
+    }
+}
+
 @media (max-width: 600px) {
     .work-card {
         flex-basis: 60%;
@@ -312,5 +329,21 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 
     .my-work-sec {
         background-color: aquamarine;
+    }
+
+    .contact-sec {
+        flex-direction: column;
+        height: 100%;
+        padding: 0% 0%;
+    }
+
+    .contact-pic{
+        width: 100%;
+    }
+
+    .contact-info{
+        padding: 0 10%;
+        margin-bottom: 10%;
+
     }
 }
