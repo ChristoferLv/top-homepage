@@ -8,6 +8,10 @@
     src: url(fonts/Roboto-Regular.woff2);
 }
 
+img{
+    display: block;
+}
+
 p {
     margin: 0;
 }
@@ -322,6 +326,42 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 }
 
 @media (max-width: 600px) {
+    .about-sec{
+        padding: 0;
+    }
+
+    .about-sec::before{
+        z-index: 0;
+    }
+
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-pic{
+        transform: scale(1);
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .about-text{
+        margin-top: 25px;
+    }
+
+    .about-text> p:first-child {
+        text-align: center;
+    }
+
+    .about-text .midias{
+        justify-content: center;
+    }
+
+    .name{
+        font-size: 12vw;
+    }
+    
     .work-card {
         flex-basis: 60%;
         background-color: rebeccapurple;
