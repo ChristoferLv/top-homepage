@@ -8,7 +8,7 @@
     src: url(fonts/Roboto-Regular.woff2);
 }
 
-img{
+img {
     display: block;
 }
 
@@ -246,13 +246,15 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
     width: 100%;
     height: 100%;
     object-fit: fill;
-    /* vertical-align: bottom; */ /*Essa linha ou o display:block resolver o espaço de baixo da imagem*/
+    /* vertical-align: bottom; */
+    /*Essa linha ou o display:block resolver o espaço de baixo da imagem*/
     display: block;
 }
 
 .phone {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .phone::before {
@@ -269,12 +271,16 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 .email {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .email::before {
     content: '';
     display: inline-block;
-    width: 1.7em;
+    min-width: 1.7em;
     height: 1.7em;
     mask-image: url('icons/email-outline.svg');
     background-size: contain;
@@ -322,46 +328,47 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 
     .contact-sec {
         padding: 5% 3%;
+        height: 100%;
     }
 }
 
 @media (max-width: 600px) {
-    .about-sec{
+    .about-sec {
         padding: 0;
     }
 
-    .about-sec::before{
+    .about-sec::before {
         z-index: 0;
     }
 
-    .about-container{
+    .about-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .about-pic{
+    .about-pic {
         transform: scale(1);
         width: 100%;
         height: auto;
         margin: 0;
     }
 
-    .about-text{
+    .about-text {
         margin-top: 25px;
     }
 
-    .about-text> p:first-child {
+    .about-text>p:first-child {
         text-align: center;
     }
 
-    .about-text .midias{
+    .about-text .midias {
         justify-content: center;
     }
 
-    .name{
+    .name {
         font-size: 12vw;
     }
-    
+
     .work-card {
         flex-basis: 60%;
         background-color: rebeccapurple;
@@ -371,19 +378,31 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
         background-color: aquamarine;
     }
 
+    .my-work-sec>p {
+        text-align: center;
+    }
+
     .contact-sec {
         flex-direction: column;
         height: 100%;
         padding: 0% 0%;
     }
 
-    .contact-pic{
+    .contact-me {
+        text-align: center;
+    }
+
+    .contact-pic {
         width: 100%;
     }
 
-    .contact-info{
+    .contact-info {
         padding: 0 10%;
         margin-bottom: 10%;
 
+    }
+
+    .midias {
+        justify-content: center;
     }
 }
