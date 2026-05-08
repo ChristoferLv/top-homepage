@@ -219,6 +219,7 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
     background-color: var(--main-bg-color);
     display: flex;
     padding: 5% 10%;
+    align-items: flex-start;
     height: 60%;
 }
 
@@ -238,7 +239,10 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 }
 
 .contact-pic {
-    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
     height: 100%;
 }
 
@@ -248,7 +252,7 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
     object-fit: fill;
     /* vertical-align: bottom; */
     /*Essa linha ou o display:block resolver o espaço de baixo da imagem*/
-    display: block;
+    /* display: block; */
 }
 
 .phone {
@@ -272,9 +276,7 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    word-wrap: break-word;
     word-break: break-word;
-    overflow-wrap: break-word;
 }
 
 .email::before {
@@ -323,7 +325,6 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 @media (max-width: 1000px) {
     .contact-pic>img {
         object-fit: cover;
-        width: 100%;
     }
 
     .contact-sec {
@@ -384,7 +385,7 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 
     .contact-sec {
         flex-direction: column;
-        height: 100%;
+        height: fit-content;
         padding: 0% 0%;
     }
 
@@ -394,6 +395,7 @@ Obs, seria necessario adicionar um div (.about-background) em torno do conteudo 
 
     .contact-pic {
         width: 100%;
+        height: auto;
     }
 
     .contact-info {
