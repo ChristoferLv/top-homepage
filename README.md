@@ -42,6 +42,10 @@ A static portfolio-style homepage with **About**, **My Work**, and **Contact sec
 - HTML
 - CSS
 
+## Visualization
+
+<img width="1900" height="2683" alt="localhost_5500_Advanced%20HTML%20and%20CSS_top-homepage_" src="https://github.com/user-attachments/assets/b86a57f5-64bb-4de9-8c2c-d2eb9e153833" />
+
 ---
 
 Project built following: [The Odin Project - Advanced HTML and CSS Homepage](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage)
