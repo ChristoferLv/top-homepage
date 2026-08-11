@@ -1,6 +1,6 @@
 # Homepage
 
-Homepage project developed as part of the Advanced HTML and CSS course from [The Odin Project](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage), focused on layout, typography, and responsive design.
+Homepage project developed as part of the Advanced HTML and CSS course from [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/advanced-html-and-css), focused on layout, typography, and responsive design.
 
 ## Project Objective
 
