@@ -44,7 +44,7 @@ A static portfolio-style homepage with **About**, **My Work**, and **Contact sec
 
 ## Visualization
 
-<img width="1900" height="2683" alt="localhost_5500_Advanced%20HTML%20and%20CSS_top-homepage_" src="https://github.com/user-attachments/assets/b86a57f5-64bb-4de9-8c2c-d2eb9e153833" />
+<img width="1890" height="2673" alt="homepage-screenshot" src="https://github.com/user-attachments/assets/c15ace26-87f7-45f2-a723-8d8ab0aaae3d" />
 
 ---
 
